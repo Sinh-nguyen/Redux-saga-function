@@ -46,7 +46,7 @@ class Header extends Component {
         open={isMenuOpen}
         onClose={this.handleMenuClose}
       >
-        <MenuItem onClick={this.handleMenuClose}>Logout</MenuItem>
+        <MenuItem onClick={this.handleMenuClose}>Signout</MenuItem>
       </Menu>
     );
   };
