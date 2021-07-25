@@ -1,4 +1,6 @@
 import AdminHomePage from '../containers/AdminHomePage';
+import LoginPage from '../containers/LoginPage';
+import SignupPage from '../containers/SignupPage';
 // eslint-disable-next-line import/no-cycle
 import Taskboard from '../containers/Taskboard';
 
@@ -28,13 +30,25 @@ export const STATUS_CODE = {
 export const ADMIN_ROUTES = [
   {
     name: 'Management Page',
-    path: '/',
+    path: '/admin',
     exact: true,
     component: AdminHomePage,
   },
   {
     name: 'Work Management',
-    path: '/task-board',
+    path: '/admin/task-board',
     component: Taskboard,
+  },
+];
+export const ROUTES = [
+  {
+    name: 'SignIn',
+    path: '/login',
+    component: LoginPage,
+  },
+  {
+    name: 'SignUp',
+    path: '/signup',
+    component: SignupPage,
   },
 ];
