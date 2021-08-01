@@ -39,7 +39,7 @@ class TaskBoard extends Component {
     const { showModal, changeModalTitle, changeModalContent } =
       modalActionCreators;
     showModal();
-    changeModalTitle('Cập nhật công việc');
+    changeModalTitle('Update work');
     changeModalContent(<TaskForm />);
   };
 
@@ -72,17 +72,17 @@ class TaskBoard extends Component {
     const { showModal, hideModal, changeModalTitle, changeModalContent } =
       modalActionCreators;
     showModal();
-    changeModalTitle('Xóa công việc');
+    changeModalTitle('Delete work');
     changeModalContent(
       <div className={classes.modalDelete}>
         <div className={classes.modalConfirmText}>
-          Bạn chắc chắn muốn xóa{' '}
+          Are you sure?{' '}
           <span className={classes.modalConfirmTextBold}>{task.title}</span>?
         </div>
         <Box display="flex" flexDirection="row-reverse" mt={2}>
           <Box ml={1}>
             <Button variant="contained" onClick={hideModal}>
-              Hủy Bỏ
+              Cancel
             </Button>
           </Box>
           <Box>
@@ -91,7 +91,7 @@ class TaskBoard extends Component {
               color="primary"
               onClick={() => this.handleDeleteTask(task)}
             >
-              Đồng Ý
+              Ok
             </Button>
           </Box>
         </Box>
@@ -150,7 +150,7 @@ class TaskBoard extends Component {
           className={classes.button}
           onClick={this.openForm}
         >
-          <AddIcon /> Thêm mới công việc
+          <AddIcon /> Add work
         </Button>
         {this.renderSearchBox()}
         {this.renderBoard()}
