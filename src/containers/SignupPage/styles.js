@@ -13,5 +13,13 @@ const styles = (theme) => ({
   signup: {
     maxwidth: 400,
   },
+  textField: {
+    width: '100%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    paddingBottom: 0,
+    marginTop: 0,
+    fontWeight: 500,
+  },
 });
 export default styles;

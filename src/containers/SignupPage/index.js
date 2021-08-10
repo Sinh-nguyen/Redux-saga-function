@@ -65,7 +65,7 @@ class SignupPage extends Component {
                   fullwidth="true"
                   types="submit"
                 >
-                  Login
+                  SignUp
                 </Button>
                 <div className="pt-1 text-md-center">
                   <Link to="/login">
