@@ -1,4 +1,5 @@
 import * as taskConstants from './../constants/task';
+// eslint-disable-next-line import/no-cycle
 import { STATUSES } from './../constants';
 
 export const fetchListTask = (params = {}) => {

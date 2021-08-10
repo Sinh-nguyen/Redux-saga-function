@@ -8,6 +8,7 @@ import { bindActionCreators, compose } from 'redux';
 import { Field, reduxForm } from 'redux-form';
 import renderTextField from '../../components/FormHelper/TextField';
 import * as modalActions from './../../actions/modal';
+// eslint-disable-next-line import/no-cycle
 import * as taskActions from './../../actions/task';
 import styles from './styles';
 import validate from './validate';
